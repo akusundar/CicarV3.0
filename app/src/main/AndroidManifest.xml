@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cs7.chinmays.cicarv30">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Main3Activity" />
+        <activity
+            android:name=".Home"
+            android:label="Home" />
+        <activity
+            android:name=".MyProfile"
+            android:label="My Profile" />
+        <activity android:name=".About" />
+        <activity
+            android:name=".CreateEvent"
+            android:label="Create Event" />
+        <activity
+            android:name=".AllEvents"
+            android:label="All Events" />
+
+        <provider
+            android:name=".data.EventProvider"
+            android:authorities="com.cs7.chinmays.cicarv30"
+            android:exported="false" />
+
+        <activity
+            android:name=".CreateVenue"
+            android:label="Create Venue" />
+        <activity
+            android:name=".ViewVenue"
+            android:label="View Venue" />
+        <activity
+            android:name=".Create_Material"
+            android:label="Create Material" />
+        <activity
+            android:name=".PerformerProfile"
+            android:label="Performer Profile" />
+        <activity
+            android:name=".Performer_allevents"
+            android:label="All events" />
+        <activity android:name=".Performer_Event" />
+        <activity android:name=".ViewMaterial"></activity>
+    </application>
+
+</manifest>
